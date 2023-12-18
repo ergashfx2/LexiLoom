@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu">
+        <a class="nav-item" href="#">Home</a>
+        <a class="nav-item" href="#">Grammar</a>
+        <a class="nav-item" href="#">Vocabulary</a>
+        <a class="nav-item" href="#">Dictionary</a>
+        </div>
+    </div>
+        <div class="content">
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+</html>

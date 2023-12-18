@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df9f3d9a-5d51-42df-8238-910a3068fc75" name="Changes" comment="inital commit" />
+    <list default="true" id="df9f3d9a-5d51-42df-8238-910a3068fc75" name="Changes" comment="inital commit">
+      <change beforePath="$PROJECT_DIR$/.idea/LexiLoom.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LexiLoom.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +30,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Ergashali/Documents/github/LexiLoom",
+    "last_opened_file_path": "C:/Users/Ergashali/Documents/github/LexiLoom/LexiLoom",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -43,8 +47,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="SDK_HOME" value="C:\Users\Ergashali\.virtualenvs\LexiLoom-tyCeyGFO\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Pipenv (LexiLoom)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -69,6 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701346039476</updated>
       <workItem from="1701346072411" duration="932000" />
+      <workItem from="1702750412026" duration="1349000" />
     </task>
     <servers />
   </component>

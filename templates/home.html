@@ -1,0 +1,33 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% block content %}
+    <div class="first-sector">
+    <div class="text-container">
+        <h2 class="text">Learn English online and improve your skills through our high-quality courses and resources.</h2>
+    </div>
+    </div>
+    <div class="second-sector">
+    <p >Everything you find here has been specially created by the British Council, the world's English teaching experts.</p>
+    </div>
+    <div class="third-section">
+    <h1>We provide you with the right tools to help you interact confidently in the real world.</h1>
+        <div class="container">
+    <div class="container-right">
+        <h1>Grammar</h1>
+        <p>Revise and practise your grammar to improve your language level and increase your confidence.</p>
+        <ul>
+            <li>Clear and simple grammar explanations to help you revise and practise different grammar points.</li>
+            <li>Online exercises to help you check your understanding of the grammar points</li>
+            <li>Use the grammar reference for further practice and more detailed explanations.</li>
+        </ul>
+    </div>
+        <div class="container-left">
+                <<img src={% static 'images/image3.jpg' %}>
+        </div>
+        </div>
+    </div>
+
+    <div class="spacer"><a>Footer</a></div>
+
+{% endblock content %}
