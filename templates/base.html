@@ -5,19 +5,23 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'icons/css/all.min.css' %}">
 </head>
 <body>
     <div class="navbar">
         <div class="menu">
-        <a class="nav-item" href="#">Home</a>
-        <a class="nav-item" href="#">Grammar</a>
+        <a class="nav-item" href="{% url 'home' %}">Home</a>
+        <a class="nav-item" href="{% url 'grammar' %}">Grammar</a>
         <a class="nav-item" href="#">Vocabulary</a>
         <a class="nav-item" href="#">Dictionary</a>
         </div>
     </div>
-        <div class="content">
         {% block content %}
+
         {% endblock content %}
-    </div>
+    <div class="footer"><p>© British Council<br>
+The United Kingdom's international organisation for cultural relations and educational opportunities.<br>
+A registered charity: 209131 (England and Wales) SC037733 (Scotland).</p></div>
+
 </body>
 </html>

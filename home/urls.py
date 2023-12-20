@@ -1,8 +1,8 @@
 from django.urls import path
 from .views import HomePage
-
+from .views import GrammarThemes
 
 urlpatterns = [
     path("", HomePage, name="home"),
-    # path("/grammar", , 'grammar')
+    path('grammar', GrammarThemes, name='grammar')
 ]

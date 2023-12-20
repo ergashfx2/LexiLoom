@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,8 @@
 }
 
 .navbar {
+    position: fixed;
+    z-index: 1000;
     height: 100px;
     width: 100%;
     background-color: #880808;
@@ -37,9 +40,32 @@
 .first-sector {
     background-image: url("image.jpg");
     width: 100%;
+    height: 400px;
+    position: relative;
+    background-position: top;
+}
+
+.first-sector2 {
+    background-image: url('image.jpeg');
+    width: 100%;
     height: 500px;
     position: relative;
 }
+
+.first-sector2 h1 {
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 50px;
+    text-align: left;
+    color: midnightblue;
+}
+
+.first-sector2 .text2 {
+    text-align: center;
+    padding-top: 5%;
+    font-family: sans-serif;
+}
+
 
 .text-container {
     position: absolute;
@@ -53,6 +79,7 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
 }
+
 
 .text-container .text {
     padding-top: 15%;
@@ -76,19 +103,19 @@
     display: inline-block;
 }
 
-.third-section ul,p {
+.third-section ul, p {
     margin-left: 30px;
-        padding-top: 30px;
+    padding-top: 30px;
 }
 
 .third-section ul {
-    margin : 0 40px;
+    margin: 0 40px;
     font-family: sans-serif;
     font-size: 30px;
 }
 
 .third-section p {
-    margin : 0 40px;
+    margin: 0 40px;
     font-family: sans-serif;
     font-size: 30px;
 }
@@ -98,14 +125,14 @@
     float: left;
 }
 
-.container-left{
+.container-left {
     width: 50%;
     float: left;
     padding-top: 40px;
 }
 
 .container-left img {
-   height: 600px;
+    height: 600px;
 }
 
 .third-section h1 {
@@ -156,7 +183,7 @@
     float: left;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
     width: 42%;
     margin-top: 40px;
@@ -170,7 +197,7 @@
     float: right;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
     width: 42%;
     margin-top: 40px;
@@ -179,26 +206,26 @@
     text-align: center;
 }
 
-    .fourth-container img {
-        display: block;
-        margin: 30px auto;
-    }
+.fourth-container img {
+    display: block;
+    margin: 30px auto;
+}
 
-    .fourth-container a {
-        display: block;
-        margin-top: 20px;
-        text-decoration: none;
-        color: black;
-    }
+.fourth-container a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+}
 
-        .fourth-container a :hover {
-        display: block;
-        margin-top: 20px;
-        text-decoration: underline;
-        color: darkblue;
-    }
+.fourth-container a :hover {
+    display: block;
+    margin-top: 20px;
+    text-decoration: underline;
+    color: darkblue;
+}
 
-.footer  {
+.footer {
     padding-top: 70px;
     margin-top: 40px;
     width: 100%;
@@ -206,4 +233,168 @@
     color: white;
     text-align: center;
     height: 200px;
+}
+
+
+/*grammar.html boshlandi*/
+.first-sector2 {
+    background-image: url('image.jpeg');
+    width: 100%;
+    height: 500px;
+}
+
+.first-sector2 h1 {
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 50px;
+    text-align: left;
+    color: midnightblue;
+}
+
+.first-sector2 .text2 {
+    text-align: center;
+    padding-top: 5%;
+    font-family: sans-serif;
+}
+
+.second-section {
+    display: inline;
+}
+
+.second-section p {
+    float: left;
+    margin-left: 5%;
+    width: 60%;
+    height: 300px;
+    margin-top: 10%;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.fourth-container2 {
+    display: inline-block;
+    float: left;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    width: 25%;
+    margin-top: 40px;
+    margin-left: 90px;
+    height: 250px;
+    text-align: center;
+    border: 8px solid #A8A8A8;
+}
+
+.grammar-elements {
+    margin-top: 30px;
+}
+
+
+.fourth-container2 a {
+    padding-left: 80px;
+    clear: both;
+    float: left;
+    font-size: 20px;
+    padding-top: 10px;
+
+}
+
+.fourth-container2 a:hover {
+    cursor: default;
+    color: #570808;
+}
+
+
+.text-right-help {
+    float: left;
+    margin-top: 2%;
+    margin-left: 15%;
+}
+
+.grammar-levels-container {
+    margin-top: 0;
+    text-align: center;
+    width: 70%;
+    height: 200px;
+    margin-left: 30px;
+
+}
+
+.grammar-levels-container img {
+    display: block;
+    width: 50%;
+    float: left;
+    margin-left: 5%;
+    margin-bottom: 300px;
+    border-bottom-left-radius: 30px;
+}
+
+.grammar-levels-container div {
+    background-color: white;
+    height: 35%;
+    width: 40%;
+    margin-left: 25%;
+    border-top-left-radius: 35px;
+    margin-bottom: 47%;
+}
+
+.grammar-levels-container h1 p {
+    float: right;
+    width: 50%;
+}
+
+.grammar-levels-container h1 {
+    padding-top: 5%;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+.grammar-levels-container a {
+    text-decoration: none;
+}
+
+.grammar-levels-container a:hover {
+    text-decoration: underline;
+    cursor: default;
+}
+
+.grammar-levels-container p {
+    padding-top: 10%;
+    font-size: 25px;
+}
+
+
+.grammar-text-container {
+        background-color: white;
+    position: absolute;
+    height: 35%;
+    width: 40%;
+    margin-left: 25%;
+    margin-top: 47%;
+    border-top-left-radius: 45px;
+}
+
+.grammar-text-container2 {
+        background-color: white;
+    position: absolute;
+    height: 35%;
+    width: 40%;
+    margin-left: 25%;
+    margin-top: 77%;
+    border-top-left-radius: 45px;
+}
+
+.grammar-text-container3 {
+        background-color: white;
+    position: absolute;
+    height: 35%;
+    width: 40%;
+    margin-left: 25%;
+    margin-top: 105%;
+    border-top-left-radius: 45px;
+}
+
+.space {
+    clear: both;
+    margin-top: 700px;
 }
