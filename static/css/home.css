@@ -117,6 +117,7 @@
 }
 
 .container {
+    position: relative;
     margin: 30px 40px;
     border-radius: 30px;
     width: 90%;
@@ -124,6 +125,85 @@
     background-color: white;
 }
 
-.spacer {
-    margin-top: 700px;
+.container button:hover {
+    background-color: #ba2121;
+    cursor: pointer;
+}
+
+
+.button {
+    margin: 40px 200px;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    color: white;
+    background-color: darkred;
+    border-radius: 30px;
+}
+
+
+.fourth-container {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.fourth-container-left {
+    display: inline-block;
+    float: left;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+    width: 42%;
+    margin-top: 40px;
+    margin-left: 90px;
+    height: 250px;
+    text-align: center;
+}
+
+.fourth-container-right {
+    display: inline-block;
+    float: right;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+    width: 42%;
+    margin-top: 40px;
+    margin-right: 90px;
+    height: 250px;
+    text-align: center;
+}
+
+    .fourth-container img {
+        display: block;
+        margin: 30px auto;
+    }
+
+    .fourth-container a {
+        display: block;
+        margin-top: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+        .fourth-container a :hover {
+        display: block;
+        margin-top: 20px;
+        text-decoration: underline;
+        color: darkblue;
+    }
+
+.footer  {
+    padding-top: 70px;
+    margin-top: 40px;
+    width: 100%;
+    background-color: #570808;
+    color: white;
+    text-align: center;
+    height: 200px;
 }
