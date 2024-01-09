@@ -2,26 +2,29 @@
 {% load static %}
 <html lang="en">
 <head>
+    <title>{% block title %} Home {% endblock title %}</title>
     <meta charset="UTF-8">
-    <title>Title</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
     <link rel="stylesheet" href="{% static 'icons/css/all.min.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src={% static 'js/script.js' %} defer></script>
 </head>
 <body>
-    <div class="navbar">
-        <div class="menu">
+<div class="navbar">
+    <div class="menu">
         <a class="nav-item" href="{% url 'home' %}">Home</a>
         <a class="nav-item" href="{% url 'grammar' %}">Grammar</a>
-        <a class="nav-item" href="#">Vocabulary</a>
+        <a class="nav-item" href="{% url 'vocabulary' %}">Vocabulary</a>
         <a class="nav-item" href="#">Dictionary</a>
-        </div>
     </div>
-        {% block content %}
+</div>
+{% block content %}
 
-        {% endblock content %}
-    <div class="footer"><p>© British Council<br>
-The United Kingdom's international organisation for cultural relations and educational opportunities.<br>
-A registered charity: 209131 (England and Wales) SC037733 (Scotland).</p></div>
+{% endblock content %}
+
+<div class="footer"><p>© British Council<br>
+    The United Kingdom's international organisation for cultural relations and educational opportunities.<br>
+    A registered charity: 209131 (England and Wales) SC037733 (Scotland).</p></div>
 
 </body>
 </html>

@@ -5,6 +5,10 @@ name = "pypi"
 
 [packages]
 django = "*"
+gtts = "*"
+requests = "*"
+english-words = "*"
+django-summernote = "*"
 
 [dev-packages]
 

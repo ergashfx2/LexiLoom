@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="search">
+    <input type="text" id="searchInput" placeholder="Start typing to look up a word">
+    <ul id="suggestionsList"></ul>
+</div>
+
+    <div class="container-vocabulary">
+
+        <h1 class="word-title">{{ word }}</h1>
+        <audio id="pronunciationAudio" controls>
+            <source src="{% static 'pronunciation.mp3' %}" type="audio/mp3">
+        </audio>
+        <ul>
+            {% for detail in details %}
+                <div class="li-div-detailed">
+                    <h3>{{ detail.partOfSpeech }}</h3>
+                    <li class="main-li">
+                        <strong class="definition">Definition:</strong> {{ detail.definition }} <br>
+                        {% if detail.synonyms %}
+                            <strong class="synonyms">Synonyms </strong>
+                            {% for synonym in detail.synonyms %}
+                                {{ synonym }},
+                            {% endfor %}
+                            <br>
+                        {% endif %}
+
+                    {% if detail.antonyms %}
+                        <strong class="synonyms">Antonyms : </strong>
+                        {% for antonyms in detail.antonyms %}
+                            {{ antonyms }}
+                        {% endfor %}
+                        <br>
+                    {% endif %}
+                    {% if detail.examples %}
+                        <strong class="synonyms li-examples">Examples :</strong>
+                        {% for examples in detail.examples %}
+                            {{ examples }},<br>
+                        {% endfor %}
+                    {% endif %}
+                    </li>
+                </div>
+            {% endfor %}
+        </ul>
+    </div>
+    <script src="{% static "js/script.js" %}"> </script>
+{% endblock content %}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Vocabulary{% endblock title %}
+{% block content %}
+<div class="search">
+    <input type="text" id="searchInput" placeholder="Start typing to look up a word">
+    <i class="fa fa-search" id="searchIcon"></i>
+    <ul id="suggestionsList"></ul>
+</div>
+
+
+    <div class="container4">
+    <div class="container-vocabulary-list">
+        <h1>Word Definitions</h1>
+        <ul>
+            {% for word, definition in words.items %}
+                <div class="words-list">
+                    <li>
+                        <strong> <a href="/get_word_definition/{{ word }}" class="suggestion">{{ word }}</a></strong>: {{ definition }}
+                    </li>
+                </div>
+            {% endfor %}
+        </ul>
+    </div>
+
+        <div class="container-vocabulary-list2">
+        <h1>Word Synonyms</h1>
+        <ul>
+            {% for word, synonym in synonyms.items %}
+                <div class="words-list">
+                    <li>
+                        <strong> <a href="/get_word_definition/{{ word }}" class="suggestion">{{ word }}</a></strong>: {{ synonym }}
+                    </li>
+                </div>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock content %}
