@@ -1,4 +1,4 @@
-# Online-Tests
+# LexiLoom
 A platform for people who are learning english
 
 ## Badges
